@@ -1,0 +1,66 @@
+/* style.css */
+body, html {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+header, section, footer {
+    text-align: center;
+
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+@media (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+.banner {
+    width: 100%; /* Ensure the banner spans the full width */
+    height: 500px; /* Set a default height, adjust as needed */
+    background-color: #0a0b0b; /* Light background color for contrast */
+    display: flex; /* Use Flexbox for alignment */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    text-align: center; /* Ensure text content is centered */
+    margin: 20px 0; /* Add some vertical space around the banner */
+}
+
+/* Example of a banner with a background image */
+.banner#home-banner {
+    background-image: url('path/to/your-image.jpg'); /* Path to your banner image */
+    background-size: cover; /* Cover the entire banner area */
+    background-position: center; /* Center the background image */
+    color: #fff; /* Light text color for contrast against a likely dark image */
+}
