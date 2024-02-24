@@ -15,6 +15,7 @@
             <li><a href="#services">Services</a></li>
             <li><a href="#about">About Us</a></li>
             <li><a href="#contact">Contact</a></li>
+            <li class="trackshipment"></li><a href="trackshipment">Track My Shipment</a></li>
         </ul>
     </nav>
 </header>
@@ -49,6 +50,30 @@
 <section id="contact">
     <h2>Contact Us</h2>
     <p>Get in touch with our team for any inquiries or to request a service.</p>
+    <form action="/submit-form-endpoint" method="post">
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+    
+        <div>
+            <label for="company">Company:</label>
+            <input type="text" id="company" name="company">
+        </div>
+    
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+    
+        <div>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="xxx-xxx-xxx">
+        </div>
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
     <!-- Include contact form or contact information here -->
 </section>
 
